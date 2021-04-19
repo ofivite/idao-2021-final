@@ -1,4 +1,4 @@
-# IDAO 2021 final solution
+# IDAO 2021 final stage solution
 
 
 ## Baobab team
@@ -17,7 +17,9 @@ Our solution of idao-2021 consists of the following steps:
 
 - The most simplistic approach without the second step (marking `sale_flg = 0` based on `education_bool`, and `sale_flg = 1` for all other samples) scored ~5400 on the public dataset. We managed to improve that solution by lightgbm only by 60 points on public.
 
-- Check `functions/aux_functions.py`, `submission/train_model.py`, `submission/generate_submission.py` and `submission/SimpleModel.py` for more details.
+- Check `submission/functions/aux_functions.py`, `submission/train_model.py`, `submission/generate_submission.py` and `submission/SimpleModel.py` for more details.
+
+- Additionally, in `submission/functions` you can find Jupyter notebooks `functions_example.ipynb`, `data_studies.ipynb` and `pipeline_dev.ipynb`, which contain our various searches for insights in data and a test version of pipeline for local debugging respectively. These are not used for generating submissions.
 
 - For training run: `docker-compose -f docker-compose.train.yaml up`
 
