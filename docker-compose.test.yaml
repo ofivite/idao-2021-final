@@ -1,0 +1,12 @@
+version: "3.3"
+
+services:
+  app:
+    build: .
+    command: make run
+    volumes:
+      - ./submission:/app
+      - ./tests/test_data_sample:/app/data
+#      - ../idao_2021_train:/app/data
+      - ./generated_submissions:/submissions
+    working_dir: /app
