@@ -10,7 +10,7 @@
   * GitHub: [@anvilarth](https://github.com/anvilarth), Mail: <filatovandreiv@gmail.com>
 
 ## Instructions
-- Our solution of idao-2021 consists of the following steps:
+Our solution of idao-2021 consists of the following steps:
 
 1) Define `education_bool` feature that checks if the education column in `client.csv` is equal to `NaN` or `PRIMARY_PROFESSIONAL`; If it's true, we mark these samples with `sale_flg = 0`;
 2) train lightgbm (model description can be found in `submission/SimpleModel.py`) on `funnel.csv` for the rest of the samples. 
